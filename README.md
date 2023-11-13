@@ -38,14 +38,22 @@ UsuarioControle
 
 -Na pasta src/main/resources, abra application.properties e adicione as configurações.
 
--MYSQL
+-Banco de dados MYSQL
+
 -spring.datasource.url=jdbc:mysql://localhost:3306/decision_api_server_01
+
 -spring.datasource.username=root
+
 -spring.datasource.password=xxxxxxx
+
 -spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
 -spring.jpa.generate-ddl=true
+
 -spring.jpa.hibernate.ddl-auto=update
+
 -server.port=8080
+
 -spring.jpa.show-sql=true
 
 #Modelos
