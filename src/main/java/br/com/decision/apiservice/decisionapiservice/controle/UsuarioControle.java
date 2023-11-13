@@ -2,6 +2,7 @@ package br.com.decision.apiservice.decisionapiservice.controle;
 
 import java.util.List;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,6 +15,7 @@ import br.com.decision.apiservice.decisionapiservice.service.UsuarioService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
+@CrossOrigin(origins = "*")
 @Validated
 @RestController
 @RequestMapping("/api")
@@ -25,7 +27,7 @@ public class UsuarioControle {
         this.usuarioService = usuarioService;
     }
 
-    @GetMapping("/list-usuarios")
+    @GetMapping("/lista-usuarios")
     public @ResponseBody List<UsuarioDTO> selecionar(){
         return usuarioService.list();
     }
