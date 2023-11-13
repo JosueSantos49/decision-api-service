@@ -1,4 +1,4 @@
-#Interface de Programação de Aplicação (decision-api-service) criada com: 
+# Interface de Programação de Aplicação (decision-api-service) criada com: 
 
 -Java 17
 -Spring boot: v3.1.4
@@ -15,9 +15,9 @@
 
 GET, POST
 
-#Cabeçalhos:
+# Cabeçalhos:
 
-Origin
+Origin, Content-Type
 
 # Padrão de Projetos
 
